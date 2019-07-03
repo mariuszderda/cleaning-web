@@ -1,0 +1,50 @@
+.navigation{
+  @include container-position;
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  &__list{
+    display: inline-flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+  }
+  &__item{
+    margin-right: 16px;
+    //height: 25px;
+    &--right{
+      margin-right: 0;
+    }
+  }
+  &__link{
+    @include font-paragraph(14px, normal, normal, 17px, -1px);
+    color: $font-header-color;
+    text-decoration: none;
+    padding: 5px 10px;
+    &:hover{
+      background: $green;
+      border-radius: 25px;
+      color: #fff;
+    }
+    &--green{
+      @include font-paragraph(10px, normal, bold, 12px, 1px);
+      display: inline-block;
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+      line-height: 40px;
+      width: 160px;
+      height: 40px;
+      background: $green;
+      border-radius: 25px;
+    }
+  }
+  &__social{
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 420px;
+    left: 40px;
+  }
+}
