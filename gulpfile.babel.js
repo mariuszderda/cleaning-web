@@ -21,7 +21,7 @@ const errorHandler = (err) => {
       title: `Gulp error in ${err.plugin}`,
       message: err.toString()
     })(err);
-}
+};
 
 gulp.task("assets", function() {
   return gulp.src("./src/assets/**/*").pipe(gulp.dest("./dist/assets/"));
