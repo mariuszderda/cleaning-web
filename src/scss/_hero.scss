@@ -1,0 +1,45 @@
+.main{
+  @include container-position;
+
+}
+.hero{
+  @include container-position;
+  height: 100%;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__header{
+    width: 100%;
+    max-width: 520px;
+    height: 100%;
+    max-height: 216px;
+    margin-left: 128px;
+  }
+  &__title{
+    @include font-paragraph(36px, normal, bold, 44px, -1.2px)
+  }
+  &__paragraph{
+    @include font-paragraph(14px, normal, 300, 30px, -1px)
+  }
+  &__wrapper{
+    background-image: url("../assets/hero-image.png");
+    background-color: #F1F6FA;
+    mix-blend-mode: normal;
+    box-shadow: 0px 2px 70px rgba(161, 161, 161, 0.504425);
+    background-position: center left;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 754px;
+    height: 100%;
+    max-height: 489px;
+    position: absolute;
+    z-index: -1;
+    top: 188px;
+    left: 536px;
+  }
+  &__image{
+    width: 100%;
+    //height: 100%;
+  }
+}
