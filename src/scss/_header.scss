@@ -1,5 +1,5 @@
 .navigation{
-  //position: absolute;
+  position: relative;
   @include container-position;
   &__wrapper{
     display: flex;
@@ -14,7 +14,6 @@
   }
   &__item{
     margin-right: 16px;
-    //height: 25px;
     &--right{
       margin-right: 0;
     }
@@ -46,6 +45,7 @@
     transform: rotate(-90deg);
     position: absolute;
     top: 410px;
-    left: 0;
+    left: -160px;
+    z-index: 2;
   }
 }

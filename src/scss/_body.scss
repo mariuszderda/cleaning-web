@@ -12,4 +12,5 @@ body{
   display: grid;
   grid-template-columns:minmax(150px, 1fr) repeat(12, 77px) minmax(150px, 1fr);
   grid-column-gap: 20px;
+
 }

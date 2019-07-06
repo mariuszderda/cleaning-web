@@ -1,5 +1,6 @@
 .main{
   @include container-position;
+  position: relative;
 
 }
 .hero{
@@ -36,7 +37,8 @@
     position: absolute;
     z-index: -1;
     top: 188px;
-    left: 536px;
+    //left: 536px;
+    right: 0;
   }
   &__image{
     width: 100%;
