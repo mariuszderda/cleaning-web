@@ -1,0 +1,66 @@
+.customers {
+	@include container-position;
+	margin-top: 93px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	&__header {
+	}
+	&__title {
+		@include font-paragraph(36px, normal, bold, 36px, -1px);
+		color: $font-header-color;
+		text-align: center;
+	}
+	&__paragraph {
+		@include font-paragraph(14px, normal, normal, 36px, -1px);
+		color: $font-paragraph-color;
+		display: block;
+		width: 600px;
+		height: 160px;
+		position: relative;
+		&::before,
+		&::after {
+			content: '"';
+			@include font-paragraph(100px, normal, normal, 122px, 0);
+			position: absolute;
+			top: 23px;
+			color: $blue;
+		}
+		&::before {
+			left: -84px;
+		}
+		&::after {
+			right: -84px;
+		}
+	}
+	&__image {
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		margin-right: 15px;
+	}
+	&__name {
+		@include font-paragraph(12px, normal, normal, 15px, -0.66px);
+	}
+	&__opinion {
+		@include font-paragraph(12px, normal, 30, 24px, -1px);
+		color: rgba(33, 33, 33, 0.5);
+	}
+	&__container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		max-width: 367px;
+		height: 100%;
+		min-height: 85px;
+	}
+	&__wrapper {
+		width: 100%;
+		min-width: 1142px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}

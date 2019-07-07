@@ -10,9 +10,6 @@
   justify-content: flex-start;
 
   &__header{
-
-
-
   }
   &__title{
     @include font-paragraph(36px, normal, bold, 63px, -1px);
@@ -44,14 +41,16 @@
     @include font-paragraph(20px, normal, 600, 32px, -1px);
     text-align: center;
     margin: 32px 0 16px ;
+    color: $font-header-color;
   }
   &__description{
     @include font-paragraph(12px, normal, 300, 26px, -1px);
     text-align: center;
     margin: 16px 36px ;
+    color: $font-paragraph-color;
   }
   &__link{
-    @include font-paragraph(10px, normal, bold, 12px, 1px);
+    @include font-paragraph(10px, normal, bold, 40px, -1px);
     display: block;
     text-transform: uppercase;
     color: #000;
@@ -64,8 +63,23 @@
     &:hover{
     color: #fff;
     background: $green;
-
     }
+  }
+  &__carousel{
+    margin-top: 52px;
+    display: flex;
+    justify-content: center;
+  }
+  &__carousel-item{
+    margin: 9px;
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: #E5EAEE;
+    border-right: 4px;
+  }
+  &__carousel-item--active{
+    background-color: #4CBAD8;
   }
 
 }
