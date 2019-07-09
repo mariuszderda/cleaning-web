@@ -45,7 +45,7 @@
 		@include font-paragraph(12px, normal, normal, 15px, -0.66px);
 	}
 	&__opinion {
-		@include font-paragraph(12px, normal, 30, 24px, -1px);
+		@include font-paragraph(12px, normal, 30px, 24px, -1px);
 		color: rgba(33, 33, 33, 0.5);
 	}
 	&__container {
