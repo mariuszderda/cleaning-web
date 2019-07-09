@@ -5,6 +5,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	position: relative;
 	&__header {
 	}
 	&__title {
@@ -55,6 +56,10 @@
 		max-width: 367px;
 		height: 100%;
 		min-height: 85px;
+	}
+	&__wave{
+		position: absolute;
+		right: 0;
 	}
 	&__wrapper {
 		width: 100%;
