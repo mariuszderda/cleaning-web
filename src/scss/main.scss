@@ -10,6 +10,7 @@
 @import "_customers";
 @import "_news";
 @import "_service-description";
+@import "_option";
 
 .wave-blue {
   width: 100%;
@@ -42,6 +43,19 @@
   &__image {
     margin: 0;
     padding: 0;
+  }
+}
+.wave-footer {
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  &__image {
+    width: 100%;
+
   }
 }
 

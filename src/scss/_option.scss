@@ -1,0 +1,110 @@
+.option {
+  @include container-position;
+  margin-top: 100px;
+  text-align: center;
+
+  &__header {
+    width: 100%;
+    max-width: 740px;
+    margin: 0 auto;
+    height: 100%;
+    min-height: 136px;
+  }
+
+  &__title {
+    @include font-paragraph(36px, normal, bold, 63px, -1px);
+    color: $font-header-color;
+  }
+
+  &__paragraph {
+    @include font-paragraph(14px, normal, 300, 36px, -1px);
+    color: $font-paragraph-color;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 68px;
+  }
+
+  &__container {
+    width: 368px;
+    height: 367px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: transform 0.3s ease-in-out;
+    //z-index: -2;
+
+    &--green {
+      background-color: #B4ECDE;
+    }
+
+    &--yellow {
+      background-color: $yellow;
+    }
+
+    &--pink {
+      background-color: #F7DFE7;
+    }
+
+    &:hover {
+      transform: scale(1.15);
+      z-index: 3;
+      mix-blend-mode: normal;
+      opacity: 0.9;
+      box-shadow: 0px 2px 70px rgba(161, 161, 161, 0.504425);
+
+      & .option__link {
+        transform: scale(1);
+
+      }
+    }
+  }
+
+  &__number {
+    @include font-paragraph(200px, normal, bold, 244px, -1px);
+    width: 100%;
+    top: 12.5px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    z-index: 0;
+    //display: none;
+
+  }
+
+  &__subtitle {
+    @include font-paragraph(26px, normal, 600, 32px, -1px);
+    margin-top: 115px;
+    flex-grow: 1;
+    z-index: 1;
+
+  }
+
+  &__description {
+    @include font-paragraph(12px, normal, 300, 24px, -1px);
+    width: 250px;
+    height: 65px;
+    margin: 0 auto;
+  }
+
+  &__link {
+    @include font-paragraph(10px, normal, bold, 12px, 1px);
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    width: 160px;
+    height: 40px;
+    background: transparent;
+    border-radius: 25px;
+    margin: 16px auto 16px;
+    border: 1px solid white;
+    transform: scale(0);
+  }
+}
