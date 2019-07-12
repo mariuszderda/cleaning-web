@@ -6,20 +6,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   &__title {
     @include font-paragraph(36px, normal, bold, 54px, -1px);
     text-align: center;
   }
-  &__paragraph{
+
+  &__paragraph {
     margin-top: 38px;
     @include font-paragraph(14px, normal, normal, 34px, -1px);
   }
-  &__form{
+
+  &__form {
     margin: 50px 0;
     padding: 0;
     position: relative;
   }
-  &__input{
+
+  &__input {
     @include font-paragraph(14px, normal, normal, 26px, -1px);
     width: 368px;
     height: 60px;
@@ -31,34 +35,50 @@
     opacity: 0.9;
     box-shadow: 0 2px 70px rgba(161, 161, 161, 0.504425);
   }
-  &__submit{
+
+  &__submit {
     position: absolute;
     top: 25px;
     right: 15px;
     z-index: 1;
   }
-  &__arrow{
+
+  &__arrow {
     width: 12px;
   }
-  &__list{
+
+  &__list {
     margin-bottom: 120px;
   }
-  &__item{
+
+  &__item {
     display: inline-block;
     list-style: none;
   }
-  &__link{
+
+  &__link {
     @include font-paragraph(14px, normal, normal, 17px, -1px);
     color: $font-header-color;
     text-decoration: none;
     padding: 0 13px;
   }
-  &__social{
+
+  &__social {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 50px;
+  }
+
+  &__icon {
+    margin: 0 12.5px;
+    color: $font-header-color;
+    text-decoration: none;
+  }
+
+  &__copy {
+    @include font-paragraph(12px, normal, normal, 22px, -1px);
   }
 }

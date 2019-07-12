@@ -18,7 +18,7 @@
     }
   }
   &__link{
-    @include font-paragraph(14px, normal, normal, 17px, -1px);
+    @include font-paragraph(14px, normal, normal, 14px, -1px);
     color: $font-header-color;
     text-decoration: none;
     padding: 5px 10px;
@@ -28,12 +28,12 @@
       color: #fff;
     }
     &--green{
-      @include font-paragraph(10px, normal, bold, 12px, 1px);
-      display: inline-block;
+      @include font-paragraph(12px, normal, bold, 40px, 1px);
+      display: block;
       text-transform: uppercase;
       color: #fff;
       text-align: center;
-      line-height: 40px;
+      line-height: 30px;
       width: 160px;
       height: 40px;
       background: $green;
